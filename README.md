@@ -75,7 +75,7 @@ Each friend object has the format:
 
 #### Protect the /friends and /friends/add routes
 
-* [ ] Redirect the user to your login route if there is not a token in local storage.
+* [x] Redirect the user to your login route if there is not a token in local storage.
 
 ### Task 3: Stretch goals
 
