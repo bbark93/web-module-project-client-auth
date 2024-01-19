@@ -6,6 +6,7 @@ import { Route, Routes, Link } from "react-router-dom";
 import Login from "./Components/Login";
 import FriendsList from "./Components/FriendsList";
 import AddFriend from "./Components/AddFriend";
+import Logout from "./Components/Logout";
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
         <Link className="link" to='login'>Login</Link>
         <Link className="link" to='friends'>Friends List</Link>
         <Link className="link" to='friends/add'>Add Friends</Link>
-        <Link className="link" to='login'>Logout</Link>
+        <Link className="link" to='logout'>Logout</Link>
       </header>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/friends" element={<FriendsList />} />
         <Route path="/friends/add" element={<AddFriend />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
     </div>
   );
