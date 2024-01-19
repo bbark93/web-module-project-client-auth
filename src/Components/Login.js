@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import axios from "axios";
+import axiosWithAuth from "../utils/axiosWithAuth";
 
 const Login = () => {
   let navigate = useNavigate();
@@ -23,7 +23,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:9000/api/login', cred)
+    axiosWithAuth()
+        .post('/login', cred)
         .then(res => {
             console.log(res);
             localStorage.setItem("token", res.data.token);

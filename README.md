@@ -79,7 +79,7 @@ Each friend object has the format:
 
 ### Task 3: Stretch goals
 
-- [ ] Add in a modularized way to access protected endpoints using axiosWithAuth.
+- [x] Add in a modularized way to access protected endpoints using axiosWithAuth.
 - [ ] Add in a protected page and route that allows shows an information friends information. Use url params to get the id for this friend.
 - [ ] Style as you wish.
 
